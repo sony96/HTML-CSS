@@ -1,0 +1,172 @@
+/* ------------------------------------------------------------ *\
+	Reset
+\* ------------------------------------------------------------ */
+
+* { box-sizing: border-box; padding: 0; margin: 0; }
+
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+@font-face {
+    font-family: 'gotham_book_regular';
+    src: url('fonts/gothambook-webfont.woff2') format('woff2'),
+         url('fonts/gothambook-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'fonts/gotham_bold_regular';
+    src: url('fonts/gotham_bold_regular-webfont.woff2') format('woff2'),
+         url('fonts/gotham_bold_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gotham_light_regular';
+    src: url('fonts/Gotham-Light-Regular.eot');
+    src: url('fonts/Gotham-Light-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Gotham-Light-Regular.woff2') format('woff2'),
+         url('fonts/Gotham-Light-Regular.woff') format('woff'),
+         url('fonts/Gotham-Light-Regular.ttf')  format('truetype'),
+         url('fonts/Gotham-Light-Regular.svg#Gotham') format('svg');
+}
+
+body { font-size: 11px; line-height: 1.2;  font-weight: 400; font-family: 'gotham_bookregular', sans-serif; color: #989898; }
+
+h1,
+h2,
+h3 { font-weight: 400; }
+
+h1 { font-size: 36px; line-height: 1.2; }
+h2 { font-size: 18px; line-height: 1.2; margin-bottom: 8px; }
+h3 { font-size: 16px; line-height: 1.2; color: white; }
+
+select { -webkit-appearance: none; -moz-appearance: none; text-indent: 1px; text-overflow: '';  }
+select,
+input { width: 100%; height: 27px; padding: 4px 5px; color: #989898; font-family: inherit; font-size: 11px; font-weight: 600; }
+
+
+.select { position: relative;  }
+.select:after { content: ''; background: url(images/select-arrow.png), no-repeat; width: 13px; height: 6px; position: absolute; top: 11px; right: 7px; pointer-events: none;  }
+
+/* ------------------------------------------------------------ *\
+	Shell
+\* ------------------------------------------------------------ */
+
+.shell { width: 916px; margin: 0 auto; }
+
+/* ------------------------------------------------------------ *\
+	btn
+\* ------------------------------------------------------------ */
+
+.btn { display: inline-block; padding: 10px 45px; border-radius: 5px; text-decoration: none; background-color: #656565; color: white; font-weight: 600; border: 0; font-family: 'gotham_boldregular', sans-serif; cursor: pointer; }
+
+.btn:hover { background-color: #a3a3a3; }
+
+/*btn--back*/
+.btn--back { padding: 8px 84px 8px 20px; float: left; }
+
+/*btn--next*/
+.btn--next { padding: 8px 17px 8px 87px; float: right; }
+
+/* ------------------------------------------------------------ *\
+    header
+\* ------------------------------------------------------------ */
+
+.header { padding: 20px 0 3px; text-align: center; border-bottom: 1px solid black; }
+.header .shell { max-width: 490px; }
+.header .logo { display: inline-block; margin-bottom: 49px;  }
+
+.header .header__nav .shell:after { content: ''; display: block; clear: both; }
+.header .header__nav .checkout { float: left; }
+.header .header__nav .nav { float: right; }
+.header .header__nav-inner { max-width: 530px; margin: 0 auto; }
+
+/* ------------------------------------------------------------ *\
+    nav
+\* ------------------------------------------------------------ */
+
+.nav ul { list-style: none; margin-top: 15px; }
+.nav ul:after { content: ''; display: block; clear: both; }
+.nav li { float: left; }
+.nav li + li { margin-left: 35px; }
+.nav li a { font-size: 14px; color: #e0e0e0; text-decoration: none; position: relative; }
+.nav li a:hover { color: black; }
+.nav li a:hover::before { content: ''; position: absolute; top: 20px; left: 16px; width: 0; height: 0; border-style: solid; border-width: 0 11px 11px 11px; border-color: transparent transparent #4d4d4d transparent;  }
+
+.nav .current { position: relative; }
+.nav .current a { color: #000; }
+.nav .current:before { content: ''; position: absolute; top: 20px; left: 16px; width: 0; height: 0; border-style: solid; border-width: 0 11px 11px 11px; border-color: transparent transparent #4d4d4d transparent;  }
+
+/* ------------------------------------------------------------ *\
+    form register
+\* ------------------------------------------------------------ */
+
+.form-register { width: 490px; margin: 0 auto; font-family: 'Tahoma', sans-serif; font-weight: 600; font-size: 11px; }
+
+.form-register .form__cols { margin: 0 -4px; }
+.form-register .form__cols:after { content: ''; display: block; clear: both; }
+.form-register .form__col { float: left; padding: 0 4px; }
+
+/*form__col--1of2*/
+.form__col--1of2 { width: 50%; }
+
+.form-register .cols { position: relative; margin: 0 -25px; } 
+.form-register .cols:after { content: ''; display: block; clear: both; }
+.form-register .col { padding: 0 25px; float: left; }
+
+/*col--1of2*/
+.col--1of2 { width: 50%; }
+
+.form-register .form-notice { background-color: #656565; text-align: center; padding: 8px 10px 7px;  font-family: 'gotham_light_regular', sans-serif; }
+.form-register .form-register__head { padding: 16px 0 40px;}
+.form-register .cols:before { content: ''; width: 1px; height: 100%; border-right: 1px solid #dbdbdb; position: absolute; top: 0; left: 50%; }
+.form-register .col__head { text-align: center; min-height: 70px; letter-spacing: 0.02em; font-family: 'gotham_bookregular', sans-serif; } 
+.form-register .form-controls { padding-top: 6px; }
+.form-register .form-asterisk { color: #ff0000; font-size: 11px; display: inline-block; font-family: 'Tahoma', sans-serif; font-weight: 400; }
+
+.form-register .form-row { margin-bottom: 16px; }
+.form-register .form-row:last-child { margin-bottom: 0;  }
+
+.form-register .form__col { padding-top: 6px; }
+
+/* ------------------------------------------------------------ *\
+    form row
+\* ------------------------------------------------------------ */
+
+.form-row { max-width: 218px; }
+
+/*form-row-small*/
+.form-row--small { width: 123px; }
+
+/* ------------------------------------------------------------ *\
+    form action
+\* ------------------------------------------------------------ */
+
+.form-action { padding: 51px 0 65px; }
+.form-action:after { content: ''; display: block; clear: both; }
+
+/* ------------------------------------------------------------ *\
+    footer
+\* ------------------------------------------------------------ */
+
+.footer { padding: 16px 0 50px; text-align: center; border-top: 1px solid #e0e0e0; }
+.footer .shell { padding: 0 0; }
+.footer .nav-footer { margin-bottom: 5px; }
+
+/* ------------------------------------------------------------ *\
+    nav footer
+\* ------------------------------------------------------------ */
+
+.nav-footer ul { list-style: none; display: inline-block; }
+.nav-footer ul:after { content: ''; display: block; clear: both; }
+.nav-footer li { float: left; }
+.nav-footer li + li { margin-left: 15px; }
+.nav-footer li a { text-decoration: none; color: #666666; font-size: 15px; letter-spacing: -0.05em; font-weight: 700; }
+.nav-footer li a:hover { color: #a3a3a3; }
+

@@ -1,0 +1,193 @@
+/* ------------------------------------------------------------ *\
+    Reset
+\* ------------------------------------------------------------ */
+
+* { box-sizing: border-box; padding: 0; margin: 0; }
+
+/* ------------------------------------------------------------ *\
+    Base
+\* ------------------------------------------------------------ */
+
+
+@font-face {
+    font-family: 'proxima_novabold';
+    src: url('fonts/proximanova-bold-webfont.woff2') format('woff2'),
+         url('fonts/proximanova-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'linotype_didot';
+    src: url('fonts/copyfontscomdidotlh-roman-opentype.eot');
+    src: url('fonts/copyfontscomdidotlh-roman-opentype.eot?#iefix') format('embedded-opentype'),
+         url('fonts/copyfontscomdidotlh-roman-opentype.woff2') format('woff2'),
+         url('fonts/copyfontscomdidotlh-roman-opentype.woff') format('woff'),
+         url('fonts/copyfontscomdidotlh-roman-opentype.ttf')  format('truetype'),
+         url('fonts/copyfontscomdidotlh-roman-opentype.svg#Linotype Didot') format('svg');
+}
+
+@font-face {
+    font-family: 'sweet_sansregular';
+    src: url('sweetsans-regular-webfont-webfont.woff2') format('woff2'),
+         url('sweetsans-regular-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'linotype_didot';
+    src: url('fonts/ufontscomdidotlh-roman-opentype.eot');
+    src: url('fonts/ufontscomdidotlh-roman-opentype.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ufontscomdidotlh-roman-opentype.woff2') format('woff2'),
+         url('fonts/ufontscomdidotlh-roman-opentype.woff') format('woff'),
+         url('fonts/ufontscomdidotlh-roman-opentype.ttf')  format('truetype'),
+         url('fonts/ufontscomdidotlh-roman-opentype.svg#Linotype Didot') format('svg');
+}
+
+
+@font-face {
+    font-family: 'gotham_book_regular';
+    src: url('fonts/gothambook-webfont.woff2') format('woff2'),
+         url('fonts/gothambook-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body { font-size: 11px; line-height: 1.55; font-weight: 400; font-family: 'sweet_sansregular', sans-setif; color: #9d9999; }
+
+a { font-size: 10px; font-family: 'gotham_book_regular', sans-serif; color: inherit; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; }
+
+h3,
+h4 { line-height: 1.2; text-transform: uppercase;  }
+
+h3 { font-size: 18px; font-family: 'linotype_didot', sans-serif; }
+h4 { font-size: 14px; font-family: 'linotype_didot', sans-serif; }
+h5 { font-size: 12px; line-height: 1.2; font-family: 'sweet_sansregular', serif; font-style: italic; letter-spacing: 0.02em; }
+
+select { -webkit-appearance: none; -moz-appearance: none; text-indent: 1px; text-overflow: ''; }
+
+input[type="checkbox"] { margin: -2px 5px 0 0; vertical-align: middle; position: relative; border-color: #c7cacc;  width: 18px; height: 18px; }
+
+/* ------------------------------------------------------------ *\
+    Shell
+\* ------------------------------------------------------------ */
+
+.shell { width: 980px; margin: 0 auto; }
+
+/* ------------------------------------------------------------ *\
+    Shell
+\* ------------------------------------------------------------ */
+
+.btn { padding: 5px 22px; background-color: #8c8888; font-family: 'linotype_didot', serif; text-transform: uppercase; color: #ffffff; font-weight: 4200; border: 0; font-size: 10px;  }
+
+/* ------------------------------------------------------------ *\
+    header
+\* ------------------------------------------------------------ */
+
+.header { padding: 85px 0; background-color: #979797; font-family: 'TrebuchetMS', sans-serif; font-size: 20px; letter-spacing: 0.02em; color: #ffff; text-align: center; }
+
+/* ------------------------------------------------------------ *\
+    section content
+\* ------------------------------------------------------------ */
+
+.section-content { padding: 51px 0; }
+.section-content h3 { border-bottom: 2px solid #e5e5e5; margin-bottom: 28px;  }
+
+/* ------------------------------------------------------------ *\
+    section return
+\* ------------------------------------------------------------ */
+
+.section-return { width: 710px; margin-bottom: 37px; }
+.section-return h4 { text-transform: uppercase; margin-bottom: 15px;  }
+.section-return p { margin-bottom: 8px;  }
+
+/* ------------------------------------------------------------ *\
+    section order
+\* ------------------------------------------------------------ */
+
+.section-order {  border-bottom: 1px solid #f2f2f2; padding-bottom: 10px; margin-bottom: 40px;  width: 690px; }
+.section-order h4 { font-weight: 400;  border-bottom: 1px solid #f2f2f2; padding-bottom: 11px; margin-bottom: 16px;  }
+
+/* ------------------------------------------------------------ *\
+    orders
+\* ------------------------------------------------------------ */
+
+.orders ul { list-style: none; }
+.orders ul:after { content: ''; display: block; clear: both; }
+
+.orders li { float: left; padding: 9px 0; height: 100%; }
+
+.orders li:nth-child(1) { width: 170px; padding-right: 40px; }
+.orders li:nth-child(2) { width: 225px; padding: 9px 40px 9px 50px; border-left: 1px solid #e8e8e8; border-right: 1px solid #e8e8e8;}
+.orders li:nth-child(3) { width: 240px; padding-left: 60px; }
+.orders li:nth-child(3) span { display: inline-block; margin-bottom: 12px; }
+
+/* ------------------------------------------------------------ *\
+    order info
+\* ------------------------------------------------------------ */
+
+.order-info h5 { margin-bottom: 13px; }
+.order-info p { font-size: 11px; font-family: 'sweet_sansregular', sans-serif; font-weight: 100; letter-spacing: 0.09em; line-height: 1.5; }
+.order-info span { font-family: 'gotham_book_regular', sans-serif; font-weight: 400; }
+.order-info a { font-weight: 400; }
+
+/* ------------------------------------------------------------ *\
+    section items
+\* ------------------------------------------------------------ */
+
+.section-items {  width: 690px;}
+.section-items h4 { margin-bottom: 20px; }
+.section-items p span { font-size: 14px; font-weight: 600; }
+
+/* ------------------------------------------------------------ *\
+    table
+\* ------------------------------------------------------------ */
+
+.table { margin-bottom: 12px;  }
+.table th { text-transform: uppercase; font-size: 12px; text-align: left; padding-bottom: 10px;  border-bottom: 1px solid #e5e5e5; }
+
+.table td { padding: 27px 0 18px;  border-bottom: 1px solid #e5e5e5; vertical-align: top; font-family: 'gotham_book_regular', serif; }
+.table td p { }
+.table td span { font-style: italic; font-weight: 600; display: inline-block; margin-bottom: 5px;  font-family: 'sweet_sansregular', serif; letter-spacing: 0.02em; }
+
+.table td:nth-child(2) { padding: 43px 0; }
+.table td:nth-child(3) { padding: 41px 0; }
+.table td:nth-child(4) { padding: 40px 0; }
+
+.table .col-item { width: 240px; }
+.table .col-price { width: 125px; }
+.table .col-option { width: 160px; }
+
+/* ------------------------------------------------------------ *\
+    item
+\* ------------------------------------------------------------ */
+
+.item:after { content: ''; display: block; clear: both; } 
+.item img { float: left; margin-right: 20px; }
+.item p { float: left; }
+
+
+/* ------------------------------------------------------------ *\
+    form-controls 
+\* ------------------------------------------------------------ */
+
+.form-controls select { width: 100%; position: relative; }
+.form-controls label { text-transform: uppercase; }
+.form-controls select { color: inherit; height: 22px; padding: 5px 5px; font-size: 10px; text-transform: uppercase; }
+.form-controls .select { position: relative; }
+.form-controls .select:after { content: ''; background: url(images/button-select.png) no-repeat;  width: 12px; height: 6px; position: absolute; top: 8px; right: 5px; pointer-events: none; }
+
+
+/* ------------------------------------------------------------ *\
+   table-action
+\* ------------------------------------------------------------ */
+
+.table-action { text-align: right; }
+
+/* ------------------------------------------------------------ *\
+    footer
+\* ------------------------------------------------------------ */
+
+.footer { padding: 80px 0; background-color: #979797; font-family: 'TrebuchetMS', sans-serif; font-size: 20px; letter-spacing: 0.02em; color: #ffff; text-align: center; }

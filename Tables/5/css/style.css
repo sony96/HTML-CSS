@@ -1,0 +1,115 @@
+/* ------------------------------------------------------------ *\
+    Reset
+\* ------------------------------------------------------------ */
+
+* { box-sizing: border-box; padding: 0; margin: 0; }
+
+/* ------------------------------------------------------------ *\
+    Base
+\* ------------------------------------------------------------ */
+
+
+@font-face {
+    font-family: 'proxima_novabold';
+    src: url('fonts/proximanova-bold-webfont.woff2') format('woff2'),
+         url('fonts/proximanova-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_novaregular';
+    src: url('fonts/proximanova-regular-webfont.woff2') format('woff2'),
+         url('fonts/proximanova-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TrebuchetMS';
+    src: url('fonts/TrebuchetMS.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body { font-size: 16px; line-height: 1.4; font-weight: 400;  font-family: 'proxima_novaregular', sans-setif; color: #6c6c6c; }
+
+
+h1 { font-size: 48px; color: #c41d1d; font-family: 'proxima_novabold', sans-serif; }
+
+h3 { font-size: 24px; color: #5e5e5e; font-family: 'proxima_novaregular', sans-serif; }
+
+h4 { font-size: 20px; color: #000; font-family: 'proxima_novabold', sans-serif; }
+
+table, th, td { border: 1px solid #c9c9c9; border-collapse: collapse; }
+
+table{ -moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px }
+
+/* ------------------------------------------------------------ *\
+    Shell
+\* ------------------------------------------------------------ */
+
+.shell { width: 994px; margin: 0 auto; padding: 0 20px; }
+
+/* ------------------------------------------------------------ *\
+    btn
+\* ------------------------------------------------------------ */
+
+.btn { padding: 7px 12px; font-family: inherit; font-size: 14px; position: relative; text-decoration: none; color: #ffff; background: rgb(153,17,17); background: linear-gradient(3deg, rgba(153,17,17,1) 0%, rgba(210,32,32,1) 94%); border-radius: 20px; border: 4px solid #ffffff; box-shadow: 0 1px 5px 1px #b3b3b3;  cursor: pointer; }
+
+/* ------------------------------------------------------------ *\
+    header
+\* ------------------------------------------------------------ */
+
+.header { padding: 85px 0; background-color: #979797; font-family: 'TrebuchetMS', sans-serif; font-size: 20px; letter-spacing: 0.02em; color: #ffff; text-align: center; }
+
+/* ------------------------------------------------------------ *\
+    section
+\* ------------------------------------------------------------ */
+
+.section { padding: 24px 0 41px; }
+
+.section .section__head { text-align: center; margin-bottom: 24px; }
+.section .section__head h1 { margin-bottom: 4px; }
+
+.section .section__body { margin-bottom: 20px; }
+
+.section .section__foot:after { content: ''; display: block; clear: both; }
+
+.section .table-services { border-radius: 5px; overflow: hidden; }
+
+/* ------------------------------------------------------------ *\
+    table
+\* ------------------------------------------------------------ */
+
+.table-services th { padding: 24px 30px; font-family: 'proxima_novabold', sans-serif; font-size: 20px; color: #2e2e2e; }
+.table-services th:first-child { text-align: left; }
+
+.table-services th:last-child, 
+.table-services td:last-child { background-color: #f1f1f1; }
+
+.table-services tr:last-child td { font-family: 'proxima_novabold', sans-serif; font-size: 20px; color: #2e2e2e; }
+.table-services td { padding: 10px 30px; font-family: 'proxima_novaregular', sans-serif; font-size: 16px; vertical-align: middle;}
+ 
+.table-services td:nth-child(2),
+.table-services td:nth-child(3) { text-align: center; color: #1c80b9; font-size: 20px; }
+
+.table-services span { font-family: 'proxima_novabold', sans-serif; }
+
+.table-services .col-xl{ width: 604px;  }
+
+.table-row:after { content: ''; display: block; clear: both; }
+.table-row p { float: left; vertical-align: middle; margin-top: 10px;}
+.table-row img { float: left; margin: 0 12px;}
+
+/* ------------------------------------------------------------ *\
+    article
+\* ------------------------------------------------------------ */
+
+.article { padding: 17px 30px 7px; width: 50%; float: left; }
+
+/* ------------------------------------------------------------ *\
+    footer
+\* ------------------------------------------------------------ */
+
+.footer { padding: 80px 0; background-color: #979797; font-family: 'TrebuchetMS', sans-serif; font-size: 20px; letter-spacing: 0.02em; color: #ffff; text-align: center; }

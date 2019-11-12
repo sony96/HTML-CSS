@@ -1,0 +1,151 @@
+/* ------------------------------------------------------------ *\
+	Reset
+\* ------------------------------------------------------------ */
+
+* { box-sizing: border-box; padding: 0; margin: 0; }
+
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+@font-face {
+    font-family: 'HelveticaNeueThin';
+    src: url('fonts/helveticaneue_thin-webfont.woff2') format('woff2'),
+         url('fonts/helveticaneue_thin-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue-Light';
+    src: url('fonts/helveticaneue-light-001.eot');
+    src: url('fonts/helveticaneue-light-001.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helveticaneue-light-001.woff2') format('woff2'),
+         url('fonts/helveticaneue-light-001.woff') format('woff'),
+         url('fonts/helveticaneue-light-001.ttf')  format('truetype'),
+         url('fonts/helveticaneue-light-001.svg#HelveticaNeue-Light') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNormal';
+    src: url('fonts/Helvetica-Normal.eot');
+    src: url('fonts/Helvetica-Normal.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Helvetica-Normal.woff2') format('woff2'),
+         url('fonts/Helvetica-Normal.woff') format('woff'),
+         url('fonts/Helvetica-Normal.ttf')  format('truetype'),
+         url('fonts/Helvetica-Normal.svg#Helvetica-Normal') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueBold';
+    src: url('fonts/HelveticaNeue-Bold.eot');
+    src: url('fonts/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/HelveticaNeue-Bold.woff2') format('woff2'),
+         url('fonts/HelveticaNeue-Bold.woff') format('woff'),
+         url('fonts/HelveticaNeue-Bold.ttf')  format('truetype'),
+         url('fonts/HelveticaNeue-Bold.svg#Helvetica Neue') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+body { font-size: 17px; line-height: 1.2; font-weight: 100; font-family: 'HelveticaNeue-Light', sans-serif; color: black; }
+
+h2 { font-size: 24px; line-height: 1.2; font-weight: 600; margin-bottom: 13px; font-family: 'HelveticaNormal', sans-serif; }
+
+
+/* ------------------------------------------------------------ *\
+	Shell
+\* ------------------------------------------------------------ */
+
+.shell { width: 1014px; margin: 0 auto; }
+
+/* ------------------------------------------------------------ *\
+	btn
+\* ------------------------------------------------------------ */
+
+.btn { display: inline-block; padding: 11px 31px; text-decoration: none; background-color: #1b3355; color: white; border-radius: 3px; font-weight: 600; border: 0; }
+
+/* ------------------------------------------------------------ *\
+	Header
+\* ------------------------------------------------------------ */
+
+.header .header__content{ padding: 28px 0; }
+.header .shell { padding: 0 22px; }
+
+/* ------------------------------------------------------------2 *\
+	Navigation
+\* ------------------------------------------------------------ */
+
+.header__bar {  padding: 10px 0 4px; text-align: center; position: relative; border-top: 1px solid black; border-bottom: 1px solid black; }
+.header__bar:before { content: ''; position: absolute; top: -5px; left: 0; width: 200px; height: 50px;  background-image: linear-gradient(to right, white, transparent); z-index: 100;}
+.header__bar:after { content: ''; position: absolute; top: -5px; right: 0; width: 200px; height: 50px;  background-image: linear-gradient(to left, white, transparent); z-index: 100;}
+
+/* ------------------------------------------------------------ *\
+	Nav
+\* ------------------------------------------------------------ */
+
+.nav { display: inline-block; font-family: 'HelveticaNormal', sans-serif; }
+.nav ul { list-style: none; }
+.nav ul:after { content: ''; display: block; clear: both; }
+.nav li { float: left; }
+.nav li + li { margin-left: 150px; }
+.nav li a { color: black; text-decoration: none; }
+.nav li a:hover { color: #ff4d00; }
+
+/* ------------------------------------------------------------ *\
+	Form contact
+\* ------------------------------------------------------------ */
+
+.form-contact { padding: 40px 0px; margin-bottom: 263px; font-size: 18px; }
+
+.form-contact .form-head { margin-bottom: 20px; }
+.form-contact .form-body { max-width: 805px; margin-bottom: 17px; }
+
+.form-contact .form-row { margin-bottom: 28px; font-size: 24px; font-weight: 100; }
+.form-contact .form-row--1of2 { width: 52%; }
+
+.form-contact .form-row:last-child { margin-bottom: 0; }
+
+.form-contact .form-label { display: none; }
+.form-contact input,
+.form-contact textarea { font: inherit;  border: 2px solid #7f7f7f; border-radius: 5px; box-shadow: inset 0 0 10px rgba(0,0,0,.4); color: #7f7f7f; }
+
+.form-contact input { width: 100%; height: 61px; padding: 0 25px; }
+.form-contact textarea { display: block; width: 100%; height: 322px; padding: 20px 25px; font-weight: 100; }
+.form-contact input::placeholder { color: #7f7f7f; font-family: 'HelveticaNeueThin', sans-serif; font-size: 24px; }
+.form-contact textarea::placeholder { color: #7f7f7f; font-family: 'HelveticaNeueThin', sans-serif; font-size: 24px; }
+
+.form-contact .form-actions { text-align: right; max-width: 805px; }
+
+/* ------------------------------------------------------------ *\
+	Footer
+\* ------------------------------------------------------------ */
+
+.footer { border-top: 1px solid black; padding: 44px 0 90px; position: relative; }
+.footer:before { content: ''; position: absolute; top: -5px; left: 0; width: 300px; height: 10px;  background-image: linear-gradient(to right, white, transparent); z-index: 100;}
+
+.footer:after { content: ''; position: absolute; top: -5px; right: 0; width: 300px; height: 10px;  background-image: linear-gradient(to left, white, transparent); z-index: 100;}
+
+.footer .shell { padding: 0 30px; }
+.footer .shell:after { content: ''; display: block; clear: both; }
+
+.footer .logo { float: left;}
+.footer .nav-utilities { float: right; }
+
+/* ------------------------------------------------------------ *\
+	Nav utilities
+\* ------------------------------------------------------------ */
+
+.nav-utilities ul { list-style: none;  }
+.nav-utilities ul:after { content: ''; clear: both; display: block; }
+
+.nav-utilities > ul > li { float: left; }
+.nav-utilities > ul > li + li { margin-left: 60px;  }
+
+.nav-utilities a { text-decoration: none; color: #ff4d00; line-height: 1; }
+.nav-utilities a:hover { text-decoration: underline; }
+
+.nav-utilities ul > li  { font-family: 'HelveticaNeueBold', sans-serif; }
+.nav-utilities li > ul > ul > li > a { font-weight: 100; font-family: 'HelveticaNeueThin', sans-serif; }
+

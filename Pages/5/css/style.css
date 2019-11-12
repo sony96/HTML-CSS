@@ -1,0 +1,167 @@
+/* ------------------------------------------------------------ *\
+	Reset
+\* ------------------------------------------------------------ */
+
+* { box-sizing: border-box; padding: 0; margin: 0; }
+
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+body { font: 14px/2 'Roboto', serif; color: #585858; }
+
+a { color: #ffaf36; text-decoration: none; }
+
+h1,
+h3,
+h4,
+h5,
+h6 { font-weight: 400;}
+
+h1 { font-size: 30px; line-height: 1; }
+h2 { font-size: 18px; line-height: 1.3; margin-bottom: 4px; }
+h3 { font-size: 16px; line-height: 1.87; color: #9a9a9a; }
+h4 { font-size: 14px; line-height: 2; }
+h5 { font-size: 13px; line-height: 1.85; }
+h6 { font-size: 12px; line-height: 1.2; }
+
+/* ------------------------------------------------------------ *\
+	Shell
+\* ------------------------------------------------------------ */
+
+.shell { width: 1170px; padding: 0 15px; margin: 0 auto; }
+
+/* ------------------------------------------------------------ *\
+	Container
+\* ------------------------------------------------------------ */
+
+.container { width: 1042px; margin: 0 15px 0 30px; }
+
+.intro { min-height: 395px; position: relative; background: #000; }
+.intro .intro__background { background-size: cover; background-position: top center; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.4; }
+/* ------------------------------------------------------------ *\
+
+
+	Intro
+\* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ *\
+	Header
+\* ------------------------------------------------------------ */
+
+.header { padding: 25px 0 326px 0; position: absolute; top: 0; left: 0; width: 100%; }
+	
+/* ------------------------------------------------------------ *\
+	Logo
+\* ------------------------------------------------------------ */
+
+.logo { width: 164px; height: 34px; display: inline-block; }
+.logo { background-color: transparent; }
+
+/* ------------------------------------------------------------ *\
+	Btn
+\* ------------------------------------------------------------ */
+
+.btn { font-size: 13px; display: inline-block; padding: 10px 38px; border: 2px solid #ffaf36; }
+
+/* ------------------------------------------------------------ *\
+	Nav
+\* ------------------------------------------------------------ */
+
+.nav { float: right; margin-top: 10px; }
+.nav ul { list-style: none; }
+.nav ul:after { content: ''; display: block; clear: both; }
+.nav li { float: left; }
+.nav li a { font-size: 14px; color: white; background-color: transparent; padding-bottom: 10px; }
+.nav li a:hover { color: #ffaf36; border-bottom: 1px solid #ffaf36; }
+.nav li + li { margin-left: 34px; }
+
+/* ------------------------------------------------------------ *\
+	Section content
+\* ------------------------------------------------------------ */
+
+.section-content { padding: 97px 0 195px 0;  }
+.section-content .section__head { margin-bottom: 80px; }
+
+.section-content .section__body { margin-bottom: 100px; }
+.section-content .section__body .articles ul { list-style: none; }
+.section-content .section__body .article-wrapper { border-bottom: 1px solid #e6e9ee; margin-bottom: 65px; }
+.section-content .section__body .article-wrapper:last-child { margin-bottom: 67px; }
+
+.section-content .section__paging { text-align: center; }
+
+/* ------------------------------------------------------------ *\
+	Article
+\* ------------------------------------------------------------ */
+
+.article {  padding-left: 99px; margin-bottom: 70px;  position: relative; }
+.article .article__head { margin-bottom: 27px; }
+.article .article__head .article__avatar { position: absolute; top: -4px; left: 0; }
+.article .article__head .article__avatar img { width: 60px; height: 60px; border-radius: 50%; }
+
+.article .article__image { margin-bottom: 26px; }
+.article .article__body p { margin-bottom: 54px;  }
+
+.article .article__actions:after { content: ''; display: block; clear: both; }
+.article .article__actions .btn { float: right; }
+
+/* ------------------------------------------------------------ *\
+	Socials
+\* ------------------------------------------------------------ */
+
+.socials h4 { margin-right: 22px; margin-top: 10px; float: left;}
+.socials ul { list-style: none; float: left; }
+.socials ul:after { content: ''; display: block; clear: both; }
+.socials li { float: left; }
+.socials li + li { margin-left: 12px;  }
+
+/* ------------------------------------------------------------ *\
+	Social
+\* ------------------------------------------------------------ */
+
+.social {  width: 50px; height: 50px;  border-radius: 50%; line-height: 50px; text-align: center; }
+.social img { vertical-align: middle; }
+
+/*social--blue*/
+.social--blue { background-color: #496fa5; }
+
+/*social--cyan*/
+.social--cyan { background-color: #00baef; }
+
+/*social--red*/
+.social--red { background-color: #eb4125; }
+
+/* ------------------------------------------------------------ *\
+	Pages
+\* ------------------------------------------------------------ */
+
+.pages { display: inline-block; list-style: none;  }
+.pages li { float: left; width: 51px; height: 51px; padding: 6px 18px; border: 2px solid black; }
+.pages li + li { margin-left: 8px;  }
+.pages li a { font-size: 18px; color: black; }
+.pages .current { border-color: #ffaf36; }
+.pages .current a { color: #ffaf36; }
+
+/* ------------------------------------------------------------ *\
+	Footer 
+\* ------------------------------------------------------------ */
+
+.footer { background-color: #2a2b2c; padding: 40px 0 35px; position: relative; }
+.footer:after { content: ''; display: block; clear: both; }
+.footer:before { content: ''; background: url(images/shapes.png) no-repeat; position: absolute; top: -101px; right: 263px; width:218px; height: 101px;}
+.footer p { font-size: 13px; color: #898989; }
+.footer .footer__aside { float: left; }
+.footer .footer__nav { float: right; margin-top: 45px; }
+
+/* ------------------------------------------------------------ *\
+	Nav utilities
+\* ------------------------------------------------------------ */
+
+.nav-utilities{ list-style: none; }
+.nav-utilities:after { content: ''; display: block; clear: both; } 
+
+.nav-utilities li { float: left; }
+.nav-utilities li + li { margin-left: 34px; }
+
+.nav-utilities li a { font-size: 12px; color: #737474; }
+.nav-utilities li a:hover { color: white; }
+

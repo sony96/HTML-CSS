@@ -1,0 +1,80 @@
+/* ------------------------------------------------------------ *\
+	Reset
+\* ------------------------------------------------------------ */
+
+* { box-sizing: border-box; padding: 0; margin: 0; }
+
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+@font-face {
+    font-family: 'TrebuchetMS';
+    src: url('fonts/TrebuchetMS.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body { font-size: 12px; line-height: 1.2; font-weight: 400; font-family: 'Arial', sans-serif; color: #444444; }
+
+h1 { font-size: 24px; line-height: 1.2; color: #003365; font-weight: 400; }
+
+table { border-color: #efefef; border-top-left-radius: 10px;  border-bottom-left-radius: 10px; }
+
+/* ------------------------------------------------------------ *\
+	Shell
+\* ------------------------------------------------------------ */
+
+.shell { width: 980px; margin: 0 auto; }
+
+/* ------------------------------------------------------------ *\
+    btn
+\* ------------------------------------------------------------ */
+
+.btn { padding: 7px 40px 7px 10px; background-color: #fea500; font-family: inherit; font-size: 14px; position: relative; text-decoration: none; color: #ffff; border-radius: 5px; box-shadow: 0px 2px 0px 0px #ad8640; text-shadow: 2px 2px 0 #c17e00; }
+.btn:before { content: ''; position: absolute; top: 6px; right: 10px; background: url( images/plus-icon.png); width: 18px; height: 18px; }
+
+/* ------------------------------------------------------------ *\
+    header
+\* ------------------------------------------------------------ */
+
+.header { padding: 85px 0; background-color: #979797; font-family: 'TrebuchetMS', sans-serif; font-size: 20px; letter-spacing: 0.02em; color: #ffff; text-align: center; }
+
+/* ------------------------------------------------------------ *\
+    content
+\* ------------------------------------------------------------ */
+
+.content { padding-bottom: 30px; }
+.content .content__head { padding: 15px 15px;  }
+.content .content__head:after { content: ''; display: block; clear: both; }
+.content .content__head .title { float: left; }
+.content .content__head .btn { float: right; }
+
+/* ------------------------------------------------------------ *\
+    table
+\* ------------------------------------------------------------ */
+
+.table { padding: 0 20px; }
+
+.table tr:nth-child(odd) { background-color: #f1f1f1; }
+
+.table th { color: #003365; font-size: 12px; border-top: 2px solid #a8a6a6;  }
+.table th + th { border-left: 1px solid #b6b3b3; }
+.table th { padding: 13px 15px 11px 15px; text-align: left; position: relative; vertical-align: middle; background-color: #e0dddd; border-top: 2px solid #b6b3b3; }
+.table th:after { content: ''; position: absolute; top: 15px; right: 7px; background: url(images/arrow.png); width: 10px; height: 7px;  } 
+
+.table td + td { border-left: 1px solid #e0e0e0; }
+.table td { padding: 12px 15px; }
+
+.table .col1 { width: 88px; }
+.table .col2 { width: 160px; }
+.table .col3 { width: 292px; }
+.table .col4 { width: 114px; }
+.table .col5 { width: 111px; }
+.table .col6 { width: 97px; }
+
+/* ------------------------------------------------------------ *\
+    footer
+\* ------------------------------------------------------------ */
+
+.footer { padding: 80px 0; background-color: #979797; font-family: 'TrebuchetMS', sans-serif; font-size: 20px; letter-spacing: 0.02em; color: #ffff; text-align: center; }

@@ -1,0 +1,186 @@
+/* ------------------------------------------------------------ *\
+	Reset
+\* ------------------------------------------------------------ */
+
+* { box-sizing: border-box; padding: 0; margin: 0; }
+
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+body { font: 13px/1.54 'Trebuchet MS', sans-serif; color: #666666; }
+
+a { color: #117cb1; text-decoration: none; }
+
+p {  margin-bottom: 26px; letter-spacing: 0.02em; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { line-height: 1.2; letter-spacing: 0.02em; }
+
+h1 { font-size: 28px; font-weight: 400; margin-bottom: 16px;  }
+h2 { font-size: 20px; margin-bottom: 15px; letter-spacing: 0.0002em; }
+h3 { font-size: 18px; margin-bottom: 22px; }
+h4 { font-size: 16px; margin-bottom: 33px; letter-spacing: 0.0002em; }
+h5 { font-size: 13px; line-height: 1.38; margin-bottom: 10px; }
+h6 { font-size: 12px;  margin-bottom: 15px; }
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child { margin-bottom: 0; }
+
+/* ------------------------------------------------------------ *\
+	Shell
+\* ------------------------------------------------------------ */
+
+.shell { max-width: 886px; margin: 0 auto; }
+
+/* ------------------------------------------------------------ *\
+	Header
+\* ------------------------------------------------------------ */
+
+.header { padding: 25px 0 2px 0; border-bottom: 5px solid #f2f2f2; margin-bottom: 16px; }
+
+/* ------------------------------------------------------------ *\
+	Nav
+\* ------------------------------------------------------------ */
+
+.nav { font-size: 16px; line-height: 1.2; }
+.nav ul { list-style: none; margin-top: 14px; }
+.nav ul:after { content: ''; display: block; clear: both; }
+.nav li { float: left; }
+.nav li + li { margin-left: 28px; }
+.nav li a { color: #737373; }
+.nav li a:hover { color: black; }
+
+/* ------------------------------------------------------------ *\
+	Nav utilities
+\* ------------------------------------------------------------ */
+
+.nav-utilities { display: inline-block; margin: 0 auto; margin-bottom: 26px; }
+.nav-utilities ul { list-style: none; }
+.nav-utilities ul:after { content: ''; display: block; clear: both; }
+.nav-utilities li { float: left; padding: 0 14px; }
+.nav-utilities li a { font-size: 12px; color: #44bcf3; }
+.nav-utilities li + li { border-left: 2px solid #858585; }
+
+/* ------------------------------------------------------------ *\
+	Content
+\* ------------------------------------------------------------ */
+
+.content { margin-bottom: 100px; }
+
+/* ------------------------------------------------------------ *\
+	Section breadcrumb
+\* ------------------------------------------------------------ */
+
+.section-breakcrumbs {  letter-spacing: 0.02em; }
+
+/* ------------------------------------------------------------ *\
+	Breadcrumbs
+\* ------------------------------------------------------------ */
+
+.breadcrumbs { list-style: none;  }
+.breadcrumbs:after { content: ''; clear: both; display: block; }
+
+.breadcrumbs li { float: left; position: relative; }
+.breadcrumbs li + li { margin-left: 35px; }
+.breadcrumbs li + li:before { content: '>'; position: absolute; top: 0; right: 101px; }
+
+.breadcrumbs a { color: #737373; font-size: 14px; }
+.breadcrumbs .current a { color: black; }
+
+/* ------------------------------------------------------------ *\
+	Btn
+\* ------------------------------------------------------------ */
+
+.btn { display: inline-block; padding: 15px 90px 14px; background-color: #5cb85c; color: white; font-size: 20px; }
+
+/* ------------------------------------------------------------ *\
+	Section main
+\* ------------------------------------------------------------ */
+.section-main { padding: 31px 0 99px 0; }
+.section-main .shell { max-width: 602px; margin: 0 auto; }
+
+/* ------------------------------------------------------------ *\
+ 	Section entry	
+\* ------------------------------------------------------------ */
+ 
+.section-entry { margin-bottom: 40px;  }
+.section-entry:last-child { margin-bottom: 0px; }
+.section-entry h2 { margin-bottom: 16px;  }
+.section-entry p { margin-bottom: 20px; }
+.section-entry p:last-child { margin-bottom: 0; }
+
+/* ------------------------------------------------------------ *\
+ 	Section steps	
+\* ------------------------------------------------------------ */
+ 
+.section-steps { margin-bottom: 22px; }
+.section-steps h2 { margin-bottom: 27px;  }
+
+/* ------------------------------------------------------------ *\
+ 	Steps	
+\* ------------------------------------------------------------ */
+ 
+.steps { list-style: none; }
+.steps:after { content: ''; display: block; clear: both; }
+.steps li { float: left; margin-bottom: 20px;  }
+.steps li:nth-child(2n) { margin-left: 40px; }
+
+/* ------------------------------------------------------------ *\
+ 	Step
+\* ------------------------------------------------------------ */
+ 
+.step { width: 280px; border: 1px solid #cccccc; padding: 24px 20px 38px; text-align: center; }
+.step img { margin-top: 18px;  }
+
+/* ------------------------------------------------------------ *\
+	Section steps two
+\* ------------------------------------------------------------ */
+
+.section-steps-two { margin-bottom: 46px; }
+.section-steps-two h2 { margin-bottom: 8px; }
+
+/* ------------------------------------------------------------ *\
+	List step
+\* ------------------------------------------------------------ */
+
+.list-step { list-style: none; }
+.list-step li:after { content: ''; display: block; clear: both; }
+.list-step li { margin-bottom: 22px; }
+.list-step li img { float: left; margin-right: 10px;}
+.list-step li p { float: left; font-size: 18px; }
+
+/* ------------------------------------------------------------ *\
+	Section action
+\* ------------------------------------------------------------ */
+
+.section-action { text-align: center; padding: 48px 0 26px 0; background-color: #f5f5f5; }
+.section-action .btn { margin-bottom: 15px; }
+
+/* ------------------------------------------------------------ *\
+	Callout
+\* ------------------------------------------------------------ */
+
+.callout { border: 5px solid #e2e2e2; padding: 28px 20px 28px; text-align: center; margin-bottom: 34px; }
+.callout .callout__content { max-width: 342px; margin: 0 auto; }
+.callout .callout__content h2 { margin-bottom: 0px; }
+.callout .callout__content .btn { margin-bottom: 16px; }
+.callout .callout__content p { font-size: 12px; line-height: 1.2; margin-bottom: 14px; }
+
+/* ------------------------------------------------------------ *\
+	Footer 
+\* ------------------------------------------------------------ */
+
+.footer { text-align: center; padding: 53px 0; }
+.footer h6:nth-child(2) { margin-bottom: 0; }
+.footer p { font-size: 12px; line-height: 1.2; margin-bottom: 14px;  }
+.footer img { margin-top: 31px; }

@@ -1,0 +1,218 @@
+/* ------------------------------------------------------------ *\
+	Reset
+\* ------------------------------------------------------------ */
+
+* { box-sizing: border-box; padding: 0; margin: 0; }
+
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+@font-face {
+    font-family: 'HelveticaNeueLTStd';
+    src: url('fonts/HelveticaNeueLTStd-Md.eot');
+    src: url('fonts/HelveticaNeueLTStd-Md.eot?#iefix') format('embedded-opentype'),
+         url('fonts/HelveticaNeueLTStd-Md.woff2') format('woff2'),
+         url('fonts/HelveticaNeueLTStd-Md.woff') format('woff'),
+         url('fonts/HelveticaNeueLTStd-Md.ttf')  format('truetype'),
+         url('fonts/HelveticaNeueLTStd-Md.svg#Helvetica Neue LT Std') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueMedium';
+    src: url('fonts/HelveticaNeue-Medium.eot');
+    src: url('fonts/HelveticaNeue-Medium.eot?#iefix') format('embedded-opentype'),
+         url('fonts/HelveticaNeue-Medium.woff2') format('woff2'),
+         url('fonts/HelveticaNeue-Medium.woff') format('woff'),
+         url('fonts/HelveticaNeue-Medium.ttf')  format('truetype'),
+         url('fonts/HelveticaNeue-Medium.svg#Helvetica Neue') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueThin';
+    src: url('fonts/helveticaneue_thin-webfont.woff2') format('woff2'),
+         url('fonts/helveticaneue_thin-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HelveticaNormal';
+    src: url('fonts/Helvetica-Normal.eot');
+    src: url('fonts/Helvetica-Normal.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Helvetica-Normal.woff2') format('woff2'),
+         url('fonts/Helvetica-Normal.woff') format('woff'),
+         url('fonts/Helvetica-Normal.ttf')  format('truetype'),
+         url('fonts/Helvetica-Normal.svg#Helvetica-Normal') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueBold';
+    src: url('fonts/HelveticaNeue-Bold.eot');
+    src: url('fonts/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/HelveticaNeue-Bold.woff2') format('woff2'),
+         url('fonts/HelveticaNeue-Bold.woff') format('woff'),
+         url('fonts/HelveticaNeue-Bold.ttf')  format('truetype'),
+         url('fonts/HelveticaNeue-Bold.svg#Helvetica Neue') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+body { font-size: 15px; line-height: 1.2;  font-weight: 400; font-family: 'HelveticaNeueLTStd', sans-serif; color: #737373; font-weight: 400; }
+
+h1,
+h2,
+h3 { font-weight: 400; }
+
+
+select { -webkit-appearance: none; -moz-appearance: none; text-indent: 1px; text-overflow: ''; }
+
+h1 { font-size: 40px; line-height: 1.2; font-family: 'HelveticaNeueThin', sans-serif; font-weight: 100px; }
+h2 { font-size: 15px; line-height: 1.2; }
+h3 { font-size: 16px; line-height: 1.2; color: white; }
+
+p{ line-height: 1.5; }
+
+a { color: #999999; }
+
+select,
+input { width: 100%; height: 44px; padding: 5px 20px; border: 1px solid #cacaca; color: #cecece;  border-radius: 5px; }
+
+select{ box-shadow: inset 0px -20px 0px 0px #fafafa; }
+
+input::placeholder { color: #cecece; }
+
+input:focus { box-shadow: 0 0 5px 2px #9ec8ec; }
+select:focus { box-shadow: 0 0 5px 2px #9ec8ec; }
+
+textarea { width: 100%; height: 119px;  padding: 15px 15px; border: 1px solid #cacaca; border-radius: 5px; margin-bottom: 5px; font-family: 'HelveticaNeueMedium', sans-serif; color: #cecece; }
+textarea::placeholder { color: #cecece; }
+textarea:focus { box-shadow: 0 0 5px 2px #9ec8ec; }
+
+/* ------------------------------------------------------------ *\
+	Shell
+\* ------------------------------------------------------------ */
+
+.shell { width: 890px; margin: 0 auto; }
+
+/* ------------------------------------------------------------ *\
+	btn
+\* ------------------------------------------------------------ */
+
+.btn { display: inline-block; border-radius: 5px; text-decoration: none; color: white; border: 0; font-family: 'HelveticaNeueBold', sans-serif; font-size: 13px; }
+
+/* btn--save */
+.btn--save { background-color: #03729e; padding: 13px 75px; }
+
+/* btn--submit */
+.btn--submit { background-color: #0099cc; padding: 13px 68px; }
+
+/* ------------------------------------------------------------ *\
+    header
+\* ------------------------------------------------------------ */
+
+.header { border-bottom: 2px solid #e4e4e4; padding: 20px 0 22px; position: relative; }
+
+.header:before { content: ''; position: absolute; top: 79px; left: 0; width: 400px; height: 5px;  background-image: linear-gradient(to right, #ffffff, transparent); z-index: 100; }
+
+.header:after { content: ''; position: absolute; top: 79px; right: 0; width: 400px; height: 5px;  background-image: linear-gradient(to left, #ffffff, transparent); z-index: 100; }
+
+.header .shell { width: 907px; margin: 0 auto; }
+.header .shell:after { content: ''; display: block; clear: both; }
+.header .logo { float: left; margin-right: 20px; }
+.header .logo-aside { float: left; font-family: 'Open Sans', sans-serif; font-size: 13px; border-left: 1px solid #cecece; padding: 10px 18px;  }
+.header .logo-aside  span { color: #0099cc; }
+
+/* ------------------------------------------------------------ *\
+    form register
+\* ------------------------------------------------------------ */
+
+.form-register .form-body { border-bottom: 1px solid #dcdcdc;}
+.form-register .form-head { padding: 39px 0 42px; }
+.form-register .section__head { border-bottom: 1px solid #dcdcdc; margin-bottom: 40px; padding-bottom: 21px; }
+.form-register .section__head--two { margin-bottom: 30px;  }
+
+.form-register .form-row:after { content: ''; display: block; clear: both; }
+.form-register .form-row { margin-bottom: 20px; }
+
+.form-register .form-label { float: left; margin-top: 13px; text-align: right; min-width: 225px; padding-right: 48px; }
+
+.form-register .form-control:after { content: ''; display: block; clear: both; }
+.form-register .form-controls { float: left; width: 430px;  }
+.form-register .form-controls .select { position: relative; }
+.form-register .form-controls .select:after { content: ''; position: absolute; top: 15px; right: 20px; background: url(images/select-arrows.png) no-repeat; width: 5px; height: 14px; pointer-events: none; }
+.form-register .form-cols:after { content: ''; display: block; clear: both; }
+
+.form-register .paragraph { margin-bottom: 60px; }
+.form-register .form-hint { display: block; }
+.form-register .section__body { max-width: 655px; }
+
+/* ------------------------------------------------------------ *\
+    form section top
+\* ------------------------------------------------------------ */
+
+.form-section-top { margin-bottom: 73px; }
+.form-section-top .form-cols { min-width: 430px; }
+
+.form-section-top .form-col { float: left; width: 215px; }
+.form-section-top .form-col:nth-child(2) { padding-left: 10px; }
+
+.form-section-top .form-size--s { width: 225px; }
+.form-section-top .form-size--m { width: 240px; }
+.form-section-top .form-size--l { width: 323px; }
+
+/* ------------------------------------------------------------ *\
+    form section middle
+\* ------------------------------------------------------------ */
+
+.form-section-middle { margin-bottom: 91px; }
+.form-section-middle .form-controls { width: 240px; }
+
+/* ------------------------------------------------------------ *\
+    form section bottom
+\* ------------------------------------------------------------ */
+
+.form-section-bottom :after { content: ''; display: block; clear: both; }
+.form-section-bottom .form-row-textarea { margin-bottom: 27px; }
+
+.form-section-bottom .form-col { float: left; }
+.form-section-bottom .form-col:last-child { padding-left: 18px; }
+
+.form-section-bottom .form-section-title { margin-bottom: 48px; }
+.form-section-bottom .form-label-wider { margin-left: -20px; }
+.form-section-bottom .form-label-two-wider { margin-left: -14px; }
+
+.form-section-bottom .form-size--xs { max-width: 110px; }
+.form-section-bottom .form-size--s { width: 140px; }
+.form-section-bottom .form-size--m { width: 237px; }
+.form-section-bottom .form-size--l { width: 322px; }
+
+.form-section-bottom .form-hint-about { color: #c1c1c1; float: right; font-size: 13px; font-style: italic; font-family: 'HelveticaNormal', sans-serif; }
+.form-section-bottom .form-hint-optional { margin: 12px 18px; display: inline-block; font-size: 15px; color: #cecece; font-weight: 100; font-family: 'HelveticaNormal', sans-serif; }
+
+.form-section-bottom .form-controls-checkbox { widows: 680px; padding-left: 205px; margin: 30px 20px 21px; }
+.form-section-bottom .form-controls-checkbox input { width: 15px; height: 15px;
+    font-family:'HelveticaNeueMedium', sans-serif; }
+.form-section-bottom .form-controls-checkbox label { color: #999999; font-size: 13px; }
+
+.form-section-bottom .form-row:after { content: ''; display: block; clear: both; }
+.form-section-bottom .form-row .form-label { float: left; }
+.form-section-bottom .form-group .form-row .form-row-multi { width: 430px; float: right; }
+
+.form-section-bottom input[type="checkbox"] { margin: -2px 0 0; vertical-align: middle; }
+ 
+/* ------------------------------------------------------------ *\
+    form action
+\* ------------------------------------------------------------ */
+
+.form-actions { padding-left: 225px; margin-bottom: 26px; }
+.form-actions .btn--submit { margin-left: 10px; }
+
+/* ------------------------------------------------------------ *\
+   footer
+\* ------------------------------------------------------------ */
+
+.footer { text-align: center; padding: 20px 0; }
+.footer a { color: #5e5e5e; }

@@ -1,0 +1,156 @@
+/* ------------------------------------------------------------ *\
+	Reset
+\* ------------------------------------------------------------ */
+
+* { box-sizing: border-box; padding: 0; margin: 0; }
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+body { font-size: 16px; line-height: 1.2; font-weight: 300; font-family: 'Roboto', sans-serif; }
+
+
+h1 { font-size: 42px; line-height: 1.2; font-weight: 100; color: #243c4f; letter-spacing: 0.01em; }
+h2 { font-size: 36px; line-height: 1.2; font-weight: 100; color: #243c4f; margin-bottom: 1px; letter-spacing: 0.01em; }
+h3 { font-size: 24px; line-height: 1.2; font-weight: 400; }
+h4 { font-size: 18px; line-height: 1.2; font-weight: 400; }
+
+
+p {  letter-spacing: 0.06em; line-height: 1.9;  margin-bottom: 20px;  }
+
+p:last-child { margin-bottom: 0;  }
+
+/* ------------------------------------------------------------ *\
+	btn
+\* ------------------------------------------------------------ */
+
+.btn { display: inline-block; padding: 15px 46px; margin-top: 43px;font-size: 16px; line-height: 1.2; text-decoration: none; background-color: #ec5646; color: white; }
+
+/*btn-service*/
+.btn--service { font-weight: 600; padding: 15px 50px; margin-top: 0;  }
+
+/* ------------------------------------------------------------ *\
+	Shell
+\* ------------------------------------------------------------ */
+
+.shell { width: 1170px; padding: 0 15px; margin: 0 auto; }
+
+/* ------------------------------------------------------------ *\
+	Header
+\* ------------------------------------------------------------ */
+
+.header { background-color: #243c4f; padding: 36px 0 30px; }
+.header .nav { float: right; }
+
+.nav ul { list-style: none; margin-top: 5px; }
+.nav ul:after { content: ''; display: block; clear: both; }
+.nav li { float: left; }
+.nav li + li { margin-left: 40px; }
+.nav li a { font-size: 16px; text-decoration: none; color: #6c8ba4; }
+.nav li a:hover { color: white; }
+
+/* ------------------------------------------------------------ *\
+	Intro
+\* ------------------------------------------------------------ */
+
+.intro { padding: 115px 0 172px; background-color: #b9e6f8; }
+.intro .intro__content { max-width: 500px; }
+.intro .intro__content h1 { margin-bottom: 45px; }
+
+/* ------------------------------------------------------------ *\
+	Section
+\* ------------------------------------------------------------ */
+
+.section { text-align: center; }
+.section .section__head { padding: 0 0 86px; }
+.section .section__head p { margin-bottom: 0; }
+
+
+/* ------------------------------------------------------------ *\
+	Section services
+\* ------------------------------------------------------------ */
+
+.section-services { background-color: #f1fafe; padding: 113px 0 143px; }
+.section-services .section__body ul { list-style: none; margin: -15px -16px; }
+.section-services .section__body ul:after { content: ''; display: block; clear: both; }
+.section-services .section__body li { float: left; padding: 15px 16px; }
+
+/* ------------------------------------------------------------ *\
+	Section service
+\* ------------------------------------------------------------ */
+
+.service { width: 358px; height: 405px; background-color: white; text-align: center; }
+.service .service__head { height: 98px; background-color: #00b4fa; position: relative; }
+.service .service__head span { position: absolute; top: 100%; left: 50%; transform: translate(-50%,-55%);  width: 100px; height: 100px; border-radius: 50%;  line-height: 100px;  width: 98px; height: 98px; line-height: 98px; }
+.service .service__head span img { vertical-align: middle; }
+
+.service .service__body { padding: 77px 10px 50px; }
+.service .service__body h3 { margin-bottom: 20px; }
+.service .service__body p { line-height: 1.7; letter-spacing: 0.01em; margin-bottom: 0;  }
+
+.link { display: inline-block; text-decoration: none; color: #44c8fb; font-size: 16px; margin-top: 32px; }
+
+/*service--orange */
+.service--orange span { background-color: #ec5646; }
+
+/*service--green*/
+.service--green span { background-color: #70d151; }
+
+/*service--purple*/
+.service--purple span { background-color: #7852e5; } 	
+
+
+/* ------------------------------------------------------------ *\
+	Section features
+\* ------------------------------------------------------------ */
+
+.section-features { padding: 120px 0 105px; }
+
+.section-features .section__head { padding-bottom:  86px; }
+.section-features .section__head h2 { margin-bottom: 7px; }
+
+.section-features .section__body { text-align: center; }
+.section-features .section__body .features ul { list-style: none; margin: -40px -15px; }
+.section-features .section__body .features ul:after { content: ''; display: block; clear: both; }
+.section-features .section__body .features li { float: left; padding: 40px 15px; }
+
+.section-features .section__foot .btn--service { margin-top: 39px; }
+
+/* ------------------------------------------------------------ *\
+	Features
+\* ------------------------------------------------------------ */
+
+.feature { width: 358px; }
+
+.feature .icon { display: inline-block; width: 72px; height: 72px; line-height: 72px; background-color: #00b4fa; border-radius: 50%; }
+.feature .icon { margin-bottom: 33px; }
+.feature .icon img { vertical-align: middle; }
+
+.feature h4 { margin-bottom: 27px; }
+.feature p { letter-spacing: 0.002em; line-height: 1.7; }
+.feature p:last-child { margin-bottom: 0; }
+
+/* ------------------------------------------------------------ *\
+	Footer
+\* ------------------------------------------------------------ */
+
+.footer { background-color: #7852e5; padding: 182px 0 94px; position: relative; }
+.footer:before { content: ''; background: url(images/quotes.png) no-repeat; width: 63px; height: 44px; position: absolute; top: 80px; left: 48%; transform: translateX(-50); }
+.footer .footer__content { max-width: 860px; margin: 0 auto; text-align: center; position: relative; }
+.footer .footer__content:before { position: absolute; bottom: 56px; left: 400px; content: '';display:inline-block; width: 50px; height: 2px; border-bottom:1px solid white; }
+.footer .footer__content img { margin-bottom: 50px; }
+.footer .footer__content p { margin-bottom: 57px; font-size: 18px; font-style: italic; color: white; letter-spacing: 0.02em; line-height: 1.7; }
+.footer .footer__content p:last-child { margin-bottom: 0; }
+.footer .footer__content p span { font-style: normal; }
+
+.footer .footer__bar { background-color: #243c4f; padding: 30px; }
+
+/* ------------------------------------------------------------ *\
+	Copyright
+\* ------------------------------------------------------------ */
+
+.copyright { background-color: #243c4f; padding: 23px 0; font-size: 14px; color: #5f7e97; }
+.copyright:after { content: ''; display: block; clear: both; }
+.copyright .copy { float: left; letter-spacing: 0.002em; }
+.copyright .designed-by { float: right;  letter-spacing: 0.002em;  }
+.copyright .designed-by a { color: white; text-decoration: none; }

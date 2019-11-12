@@ -1,0 +1,124 @@
+/* ------------------------------------------------------------ *\
+	Reset
+\* ------------------------------------------------------------ */
+
+* { box-sizing: border-box; padding: 0; margin: 0; }
+
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+body { font: 21px/1.43 'Trebuchet MS', sans-serif; color: #262626; }
+
+h1 { font-size: 40px; line-height: 1.26; color: white; font-weight: 400; letter-spacing: 0.05em; }
+h2 { font-size: 36px; line-height: 1.11; font-weight: 400; }
+h3 { font-size: 33px; line-height: 1.33; letter-spacing: 0.003em; }
+h4 { font-size: 26px; line-height: 1; }
+h5 { font-size: 20px; line-height: 1.5; color: white; }
+h6 { font-size: 18px; line-height: 1.2; color: white;  }
+
+
+/* ------------------------------------------------------------ *\
+	Btn
+\* ------------------------------------------------------------ */
+
+.btn { display: inline-block; background-color: #5cbe89; border-radius: 3px; font-size: 12px; line-height: 1.22; padding: 10px 40px; text-decoration: none; color: white }
+
+/*btn-article*/
+.btn--article { padding: 10px 30px; }
+
+/*btn-footer*/
+.btn--footer { padding: 10px 30px; }
+
+/* ------------------------------------------------------------ *\
+	Wrapper
+\* ------------------------------------------------------------ */
+
+.wrapper { background-color: #ececec; }
+
+/* ------------------------------------------------------------ *\
+	Shell
+\* ------------------------------------------------------------ */
+
+.shell { width: 1030px;  margin: 0 auto; }
+
+/* ------------------------------------------------------------ *\
+	Intro
+\* ------------------------------------------------------------ */
+
+.intro { min-height: 482px; position: relative; padding: 65px;}
+.intro .intro__background { background-size: cover; background-position: top center; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.intro .intro__content { position: relative; text-align: center; max-width: 460px; margin: 0 auto; }
+
+.intro .intro__content h1 { margin-bottom: 14px; }
+.intro .intro__content img { margin-bottom: 18px; }
+.intro .intro__content h6 {  margin-bottom: 21px; }
+.intro .intro__content h5 {  margin-bottom: 13px; }
+
+/* ------------------------------------------------------------ *\
+	Section article
+\* ------------------------------------------------------------ */
+
+.section-article .article { padding: 69px 100px 82px;   background-color: #ffffff; }
+.section-article { margin-bottom: 82px; } 
+
+.section-article .article__head { padding: 0 40px 78px 40px; text-align: center; }
+.section-article .article__head h3 { font-size: 30px; line-height: 1.33; margin-bottom: 36px; }
+
+.section-article .article__body { background-color: #ffffff; }   
+.section-article .article__body:after { content: ''; display: block; clear: both; }
+
+.section-article .article-image { max-width: 400px; max-height: 410px; float: left; }
+
+.section-article .content-article { width: 430px; float: left; padding: 30px 0 30px 57px; text-align: left;  }
+.section-article .content-article h6 { color: black; text-align: left; margin-bottom: 39px; }
+.section-article .content-article > p { font-size: 18px; line-height: 1.2; margin-bottom: 30px; }
+
+.section-article .content-article .list-icons ul{ margin-left: -15px; }
+
+/* ------------------------------------------------------------ *\
+	List icons
+\* ------------------------------------------------------------ */
+
+.list-icons { font-size: 9px; line-height: 1.22; text-align: center; }
+.list-icons a { text-decoration: none; color: inherit; }
+
+.list-icons ul{ list-style: none; margin: 0 -15px 27px; }
+.list-icons ul:after { content: ''; display: block; clear: both; }
+
+.list-icons li { width: 33.33%; min-height: 80px; float: left; padding: 7px 30px; }
+.list-icons li + li { border-left: 1px solid #e0e0e0; }
+
+.list-icons img { display: block; margin: 0 auto 10px; }
+	
+/* ------------------------------------------------------------ *\
+	Accordion
+\* ------------------------------------------------------------ */
+
+.accordion { margin-bottom: 72px; }
+.accordion .shell { padding: 0 0; }
+.accordion h2 { text-align: center; margin-bottom: 36px; font-weight: 400; letter-spacing: 0.002em; }
+.accordion .accordion__section { border-bottom: 1px solid #c2c2c2; position: relative; }
+.accordion .accordion__section:after { content: ''; background: url(images/plus-btn.png) no-repeat; width: 20px; height: 20px; position: absolute; top: 70px; right: 38px; font-size: 40px; color: #c2c2c2; pointer-events: none;}
+
+.accordion .accordion__section .shell { padding: 0 40px; }
+.accordion .accordion__section:last-child { border-bottom: 0;}
+.accordion .accordion__section .accordion__head { padding: 28px 60px }
+
+.accordion .accordion__head { pointer-events: all; cursor: pointer; }
+.accordion .accordion__head:after { content: ''; clear: both; display: block;  }
+.accordion .accordion__head img { float: left; margin-right: 70px; }
+
+.accordion .accordion__head .accordion-content { float: left; margin-top: 33px; }
+.accordion .accordion__head .accordion-content h4 { margin-bottom: 12px; }
+.accordion .accordion__head .accordion-content p {font-size: 18px; line-height: 1.2; }
+
+/* ------------------------------------------------------------ *\
+	Footer
+\* ------------------------------------------------------------ */
+
+.footer { background-color: #26435d; padding: 26px 0; }
+.footer:after { content: ''; display: block; clear: both; }
+.footer .shell { padding: 0 0;}
+.footer img { float: left; }
+.footer .btn--footer { float: right; margin-top: -3px; }

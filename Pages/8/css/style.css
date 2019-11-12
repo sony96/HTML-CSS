@@ -1,0 +1,103 @@
+/* ------------------------------------------------------------ *\
+	Reset
+\* ------------------------------------------------------------ */
+
+* { box-sizing: border-box; padding: 0; margin: 0; }
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+body { font-size: 18.05; line-height: 1.55; font-weight: 300; font-family: 'Roboto', sans-serif; }
+
+h1 { font-size: 70px; line-height: 1.20; font-weight: 100; color: #ffffff; }
+h2 { font-size: 39.97px; line-height: 1.12; font-weight: 300; margin-bottom: 28px;  }
+
+p { margin-bottom: 33px; letter-spacing: 0.06em; line-height: 1.7em;  }
+
+/* ------------------------------------------------------------ *\
+	Btn
+\* ------------------------------------------------------------ */
+
+.btn { display: inline-block; padding: 16px 37px; color: white; border: 2px solid white; border-color: white;  font-size: 12px; font-weight: 400; line-height: 1.2; text-decoration: none; }
+
+/*btn--new-here*/
+.btn--new-here { padding: 16px 43px; color: #7ec1c3; border-color: #7ec1c3; }
+
+/*btn--visit-us*/
+.btn--visit-us { padding: 16px 50px; color: #7ec1c3; border-color: #7ec1c3; }
+
+/*btn--join-us*/
+.btn--join-us { padding: 16px 59px; color: #7ec1c3; border-color: #7ec1c3; }
+
+/*btn--join-us*/
+.btn--join-a { padding: 16px 38px; color: #7ec1c3; border-color: #7ec1c3; }
+
+
+/* ------------------------------------------------------------ *\
+	Shell
+\* ------------------------------------------------------------ */
+
+.shell { width: 1170px; margin: 0 auto; }
+
+/* ------------------------------------------------------------ *\
+	Intro
+\* ------------------------------------------------------------ */
+
+.intro { min-height: 420px; position: relative; text-align: center; z-index: 1; padding-top: 147px;  background-size: cover; background-position: bottom center; }
+.intro .intro__background {  position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; box-shadow: inset 0 50px 50px rgba(0,0,0,.4); }
+.intro h1 { margin-bottom: 30px; }
+
+/* ------------------------------------------------------------ *\
+	Header
+\* ------------------------------------------------------------ */
+
+.header { padding: 25px 0 0 0; position: absolute; top: 0; left: 0; width: 100%;z-index: 3; }
+.header .header__bar .btn { float: right; margin-top: 10px; }
+.header .header__content { text-align: center; padding: 46px 0; }
+
+/* ------------------------------------------------------------ *\
+	Container	
+\* ------------------------------------------------------------ */
+
+.container { padding: 145px 0 50px;  }
+.container .container__head { margin-bottom: 100px; position: relative; max-width: 420px; }
+.container .container__head:before { position: absolute; top: -26px; left: 0; content: '';display:inline-block; width: 30px; height: 1px; border-bottom:1px solid #000; } 
+.container .container__head p { m argin-bottom: 0; }
+
+/* ------------------------------------------------------------ *\
+	Footer
+\* ------------------------------------------------------------ */
+
+.footer { border-top: 1px solid #dddddd; padding: 12px 0; }
+.footer:after { content: ''; display: block; clear: both; }
+.footer .copyright { float: left; }
+.footer p { font-size: 14px; letter-spacing: 0.002em; margin-bottom: 0px; color: #999999; }
+.footer .footer__nav { float: right; margin-right: 100px; }
+
+/* ------------------------------------------------------------ *\
+	Footer nav
+\* ------------------------------------------------------------ */
+
+.footer__nav ul { list-style: none; }
+.footer__nav ul:after { content: ''; display: block; clear: both; }
+.footer__nav li { float: left; }
+.footer__nav li + li { margin-left: 32px; }
+.footer__nav li a { color: #999999; font-size: 14px; text-decoration: none; letter-spacing: 0.05em;  }
+
+
+/* ------------------------------------------------------------ *\
+	Section
+\* ------------------------------------------------------------ */
+
+.section { margin-bottom: 98px; }
+.section .shell:after { content: ''; display: block;  clear: both; }
+.section .section__content { position: relative; }
+.section .section__content:before { content: ''; width: 30px; height: 1px; border-bottom: 1px solid black; position: absolute; top: 125px; left: 0; }
+.section .section__image { width: 700px; float: left; }
+.section .section__image img { width: 100%;  }
+
+.section .section__content { width: 470px; float: left; padding: 150px 80px 0 0; }
+
+/*section--reversed*/
+.section--reversed .section__content { float: right; padding: 150px 0 0 70px; }
+.section--reversed .section__content:before { content: ''; width: 30px; height: 1px; border-bottom: 1px solid black; position: absolute; top: 125px; left: 70px; }

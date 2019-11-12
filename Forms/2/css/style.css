@@ -1,0 +1,160 @@
+/* ------------------------------------------------------------ *\
+	Reset
+\* ------------------------------------------------------------ */
+
+* { box-sizing: border-box; padding: 0; margin: 0; }
+
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+
+@font-face {
+    font-family: 'droid_sansregular';
+    src: url('fonts/droidsans-webfont.woff2') format('woff2'),
+         url('fonts/droidsans-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'droid_sansbold';
+    src: url('fonts/droidsans-bold-webfont.woff2') format('woff2'),
+         url('fonts/droidsans-bold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+body { font-size: 14px; line-height: 1.2; letter-spacing: 0.002em; font-weight: 400; font-family: 'droid_sansregular', sans-serif; color: black; }
+
+h2 { font-size: 24px; line-height: 1.2; font-weight: 400; margin-bottom: 13px; }
+
+p { margin: 0; line-height: 1.6; color: #631c1c; letter-spacing: 0.04em; font-weight: 400; }
+
+select,
+input { width: 100%; height: 38px; padding: 10px 10px; border: 3px solid #ddd2d2; background-color: #ddd2d2; box-sizing: border-box; color: #888383; font-family: 'droid_sansregular', sans-serif; color: #615e5e; }
+
+input:focus { background-color: white; }
+input:hover { cursor: pointer; background-color: #eae0e0; box-shadow: inset 0 0 0 1px white; }
+
+input::-webkit-calendar-picker-indicator,
+input::-webkit-inner-spin-button { display: none; }
+
+select:focus { background-color: white; }
+select:hover { cursor: pointer; background-color: #eae0e0; box-shadow: inset 0 0 0 1px white; }
+
+textarea { color: #615e5e; }
+
+/* ------------------------------------------------------------ *\
+    Wrapper
+\* ------------------------------------------------------------ */
+
+.wrapper { background-color: #6c1e1e; }
+
+/* ------------------------------------------------------------ *\
+	Shell
+\* ------------------------------------------------------------ */
+
+.shell { width: 1000px; margin: 0 auto; }
+
+/* ------------------------------------------------------------ *\
+	btn
+\* ------------------------------------------------------------ */
+
+.btn { display: inline-block; padding: 18px 45px; text-decoration: none; background-color: #e6b409; color: white; text-shadow: -1px -1px black; font-weight: 600; }
+
+/* ------------------------------------------------------------ *\
+    Header
+\* ------------------------------------------------------------ */
+
+.header .header__bar { padding: 0 0 0 0; background-color: #4a0c0c; border-bottom: 1px solid #793232; line-height: 1; }
+.header .shell { padding: 0 0 0 10px; }
+
+.header .header__body { padding: 14px 0 24px; text-align: center; position: relative; }
+.header .header__body:after { content: ''; display: block; clear: both;  }
+
+.header .header__body .logo { float: left;  margin-top: 20px; }
+.header .header__body .logo-main { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+.header .header__body .search { float: right; margin-top: 63px; position: relative;  }
+.header .header__body .search input { background-color: #986262;  border: 1px solid transparent; height: 24px; width: 170px; margin: 0 6px 0; }
+.header .header__body .search input:hover { box-shadow: none; }
+.header .header__body .search input::placeholder { color: #6c1e1e; opacity: 1; }
+.header .header__body .search:after { content: ''; position: absolute; top: 0; right: 176px; width: 0; height: 0; border-style: solid; border-width: 0 24px 24px 0; border-color: transparent #986262 transparent transparent; }
+.header .header__body .search:before { content: ''; position: absolute; top: 5px; right: 10px; width: 14px; height: 14px; background: url(images/search.png); }
+
+/* ------------------------------------------------------------ *\
+    Nav
+\* ------------------------------------------------------------ */
+
+.nav ul { list-style: none; padding: 9px 0; margin: 0; }
+.nav ul:after { content: ''; display: block; clear: both; }
+
+.nav li { float: left;  }
+.nav li + li { margin-left: 23px; }
+.nav li a { text-decoration: none; color: #e09393; font-size: 13px; }
+
+/* ------------------------------------------------------------ *\
+    Container
+\* ------------------------------------------------------------ */
+
+.container .shell { box-shadow: 0 -20px 20px -20px #333; }
+.container .container__head { padding: 10px; min-height: 240px; background-color: white; }
+.container .container__body { padding: 12px 30px 0 274px; background-color: white; } 
+
+/* ------------------------------------------------------------ *\
+    Form register
+\* ------------------------------------------------------------ */
+
+.form-register .form__head { margin-bottom: 30px;  }
+.form-register .form-row { margin-bottom: 21px;}
+
+.form-register .form-cols { margin: 0 -43px 6px; }
+.form-register .form-cols:after { content: ''; display: block; clear: both; }
+
+.form-register .form-col { float: left; width: 50%; padding: 0 43px; }
+
+.form-register .form-controls {  margin: 5px 0 20px 0; width: 100%; border: 3px; }
+.form-register .form-label { font-size: 13px; font-weight: 600;  }
+
+.form-register .field--textarea { height: 120px; width: 100%; padding: 5px 5px; border: 3px solid #ddd2d2;  background-color: #ddd2d2; }
+.form-register .field--textarea:focus { background-color: white; }
+.form-register .field--textarea:hover { cursor: pointer; background-color: #eae0e0; }
+
+.form-register .form-actions { text-align: right; }
+
+.form-register .form-controls .select { position: relative; overflow: hidden; }
+.form-register .form-controls .select:before { content: ''; width: 50px; height: 80px; position: absolute; top: -10px; right: -10px; transform: rotate(45deg); background-color: #6c1e1e; opacity: .4; pointer-events: none; }
+.form-register .form-controls .select:after { content: ''; background:url(images/arrow.png) no-repeat; width: 16px; height: 13px; position: absolute; top: 16px; right: 3px; pointer-events: none; }
+
+/*form-controls--date*/
+.form-controls--date { position: relative; overflow: hidden; }
+.form-controls--date:before { content: ''; width: 50px; height: 80px; position: absolute; top: -10px; right: -10px; transform: rotate(45deg); background-color: #6c1e1e; opacity: .4; pointer-events: none; }
+.form-controls--date:after { content: ''; background:url(images/calendar.png); width: 16px; height: 13px; position: absolute; top: 13px; right: 10px; pointer-events: none; }
+
+/* ------------------------------------------------------------ *\
+    Footer
+\* ------------------------------------------------------------ */
+
+.footer .footer__content {  padding: 27px 0 23px; }
+
+.footer .footer__bar { background-color: #783636; padding: 5px 0; }
+.footer .footer__bar:after { content: ''; display: block; clear: both; }
+.footer .footer__bar .copyright { font-size: 11px; color: #b17575; float: right;  }
+
+/* ------------------------------------------------------------ *\
+    Navigations
+\* ------------------------------------------------------------ */
+
+.navigations ul { list-style: none; margin: 0; padding: 0; }
+.navigations ul:after { content: ''; clear: both; display: block; }
+.navigations li { float: left; width: 200px; }
+
+/* ------------------------------------------------------------ *\
+    Nav utilities
+\* ------------------------------------------------------------ */
+
+.nav-utilities a { text-decoration: none; color: #cd7e7e; line-height: 1; font-size: 11px; }
+.nav-utilities a:hover { text-decoration: underline; }
+.nav-utilities li { position: relative; padding: 0 20px; margin-bottom: 5px;  }
+.nav-utilities li:before { content: ''; position: absolute; top: 6px; left: 6px; background: url(images/bullet.png); width: 4px; height: 5px; }

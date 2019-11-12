@@ -1,0 +1,129 @@
+/* ------------------------------------------------------------ *\
+	Reset
+\* ------------------------------------------------------------ */
+
+* { box-sizing: border-box; padding: 0; margin: 0; }
+
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+@font-face {
+    font-family: 'TrebuchetMS';
+    src: url('fonts/TrebuchetMS.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body { font-size: 14px; line-height: 1.2; font-weight: 400; font-family: 'TrebuchetMS', sans-serif; color: #444444; }
+
+h1,
+h2,
+h3 { font-family: inherit; line-height: 1.2; font-weight: 400; }
+
+h1 { font-size: 31px; color: #6a7178; font-weight: 600; letter-spacing: 0.02em; }
+
+h2 { font-size: 30px; color: #2f626f; }
+
+h3 { font-size: 21px; color: #2f626f; }
+
+table { border-color: #efefef; border-top-left-radius: 10px;  border-bottom-left-radius: 10px; }
+
+
+/* ------------------------------------------------------------ *\
+	Shell
+\* ------------------------------------------------------------ */
+
+.shell { width: 980px; margin: 0 auto; padding: 0 20px; }
+
+
+/* ------------------------------------------------------------ *\
+    btn
+\* ------------------------------------------------------------ */
+
+.btn { padding: 10px 10px; font-family: inherit; font-size: 14px; position: relative; text-decoration: none; color: #ffff; border-radius: 20px; color: #ffff; border: 2px solid #ebebeb; cursor: pointer; }
+
+/*btn--update*/
+.btn--update { background: rgb(234,157,55); background: linear-gradient(9deg, rgba(234,157,55,1) 0%, rgba(255,204,84,1) 94%); padding: 4px 32px; }
+
+/*btn--check-out*/
+.btn--check-out { background: rgb(117,184,61); background: linear-gradient(13deg, rgba(117,184,61,1) 0%, rgba(169,223,86,1) 94%); padding: 8px 37px; font-size: 21px;}
+
+/* ------------------------------------------------------------ *\
+    header
+\* ------------------------------------------------------------ */
+
+.header { padding: 85px 0; background-color: #979797; font-family: 'TrebuchetMS', sans-serif; font-size: 20px; letter-spacing: 0.02em; color: #ffff; text-align: center; }
+
+/* ------------------------------------------------------------ *\
+    content
+\* ------------------------------------------------------------ */
+
+.content { padding: 18px 0px 30px; }
+
+/* ------------------------------------------------------------ *\
+    table wrapper
+\* ------------------------------------------------------------ */
+
+.table-wrapper .table-wrapper__title { padding: 4px 6px; background-color: #e9eaea; color: #6a7178; }
+.table-wrapper .table-wrapper__content { padding: 27px 27px; border: 1px solid #eeeeee; }
+.table-wrapper .table-wrapper__content .table-head { margin-bottom: 25px; }
+
+.table-wrapper .table-foot:after { content: ''; display: block; clear: both; }
+.table-wrapper .table-foot .testemonial { float: left; }
+.table-wrapper .table-foot .total { float: right; width: 410px; }
+
+/* ------------------------------------------------------------ *\
+    table cart
+\* ------------------------------------------------------------ */
+
+.table-cart { margin-bottom: 24px; color: #6a7178;  }
+.table-cart th { border-top: 1px solid #d3cbc7; border-bottom: 1px solid #d3cbc7; text-align: right; padding: 13px 0; }
+.table-cart th:first-child { text-align: left; padding: 13px 6px; }
+
+.table-cart td { border-bottom: 1px solid #d3cbc7; padding: 14px 0; }
+.table-cart td:nth-child(3) { padding: 20px 0 47px; text-align: right; }
+
+.table-cart td:nth-child(2),
+.table-cart td:nth-child(4) { padding: 20px 0 47px; text-align: right; color: #e26735;  font-size: 15px; }
+
+.table-cart .col1 { width: 620px; }
+.table-cart .col2 { width: 75px; }
+.table-cart .col3 { width: 105px; }
+.table-cart .col4 { width: 80px; }
+.table-cart input { width: 50px; float: right; border-top: 2px solid #707070; border-left: 2px solid #707070; text-align: center; color: #707070; }
+
+/* ------------------------------------------------------------ *\
+    product
+\* ------------------------------------------------------------ */
+
+.product:after { content: ''; display: block; clear: both; }
+.product .product__button { float: left; margin-right: 45px; }
+.product .product__button img { margin-top: 50%; }
+.product .product__image { float: left; margin-right: 67px; }
+.product .product__description { float: left; margin-top: 7px; color: #6a7178;}
+
+/* ------------------------------------------------------------ *\
+    testemonial
+\* ------------------------------------------------------------ */
+
+.testemonial { max-width: 410px; }
+.testemonial .testemonial__head { margin-bottom: 26px; }
+.testemonial .testemonial__body p { text-indent: 34px; position: relative; font-size: 17px;  }
+.testemonial .testemonial__body p:before { content: ''; background: url(images/quotes-begin.png) no-repeat; width: 20px; height: 16px; position: absolute; top: 0; left: -5px; }
+.testemonial .testemonial__body p:after { content: ''; background: url(images/quotes-end.png) no-repeat; width: 20px; height: 16px; position: absolute; bottom: -4px; right: 160px; }
+
+/* ------------------------------------------------------------ *\
+    total
+\* ------------------------------------------------------------ */
+
+.total { max-width: 410px; text-align: right; }
+.total h1 { margin-bottom: 25px; }
+.total .btn--update { margin-right: 12px; }
+.total p { margin-top: 15px; color: #6a7178;2 }
+
+/* ------------------------------------------------------------ *\
+    footer
+\* ------------------------------------------------------------ */
+
+.footer { padding: 80px 0; background-color: #979797; font-family: 'TrebuchetMS', sans-serif; font-size: 20px; letter-spacing: 0.02em; color: #ffff; text-align: center; }
