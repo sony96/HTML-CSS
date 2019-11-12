@@ -167,7 +167,6 @@ background: radial-gradient(circle, rgba(245,179,73,1) 0%, rgba(224,165,69,1) 46
 	List Numbers
 \* ------------------------------------------------------------ */
 
-.list-numbers { }
 .list-numbers ol { list-style: none; }
 .list-numbers li { padding-left: 111px; counter-increment: i; margin-bottom: 46px; position: relative; }
 .list-numbers li:before { content: '#' counter(i); font-family: 'Bebas', sans-serif; font-size: 75px; color: #cccccc; position: absolute; top: -40px; left: 30px; }

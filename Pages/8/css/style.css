@@ -62,7 +62,7 @@ p { margin-bottom: 33px; letter-spacing: 0.06em; line-height: 1.7em;  }
 .container { padding: 145px 0 50px;  }
 .container .container__head { margin-bottom: 100px; position: relative; max-width: 420px; }
 .container .container__head:before { position: absolute; top: -26px; left: 0; content: '';display:inline-block; width: 30px; height: 1px; border-bottom:1px solid #000; } 
-.container .container__head p { m argin-bottom: 0; }
+.container .container__head p { margin-bottom: 0; }
 
 /* ------------------------------------------------------------ *\
 	Footer
